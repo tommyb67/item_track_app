@@ -38,9 +38,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+# Add rails_12factor and ruby version for deployment to heroku
 gem 'rails_12factor', group: :production
-
 ruby "2.0.0"
+
+# Add devise for user sign-up and authentacation
+gem 'devise'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
